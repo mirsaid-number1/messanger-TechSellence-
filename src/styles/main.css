@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #DEF0F1;
+  height: 100vh;
+  width: 100%;
+}
+
+.App .message_section {
+  height: auto;
+}
+.App .message_section .message_wrapper {
+  width: 100%;
+  background-color: grey;
+  height: 390px;
+}
+.App .message_section .message_wrapper .message_nav {
+  padding-left: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+}
+.App .message_section .message_wrapper .message_nav .unit1 {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  align-items: center;
+}
+.App .message_section .message_wrapper .message_nav .unit1 .icon {
+  cursor: pointer;
+}
+.App .message_section .message_wrapper .message_nav .unit2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  color: white;
+}
+.App .message_section .message_wrapper .message_nav .unit2 .icon {
+  cursor: pointer;
+}
+.App .message_section .message_wrapper .message_nav .unit2 .part {
+  height: 20px;
+  width: 3px;
+  background-color: rgb(72, 70, 70);
+}
+.App .message_section .message_wrapper .message_nav .unit2 .zoom {
+  background-color: grey;
+  color: white;
+}
+.App .message_section .message_wrapper .message_content {
+  display: flex;
+  width: 100%;
+}
+.App .message_section .message_wrapper .message_content .white_board {
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  width: 100%;
+  background-color: white;
+  overflow-y: scroll;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0 0 100px;
+  height: 200px;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .director {
+  font-size: 23px;
+  font-weight: 400;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .desc {
+  font-size: 15px;
+  font-weight: 800;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .title {
+  font-size: 25px;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .expanded_title {
+  font-size: 35px;
+  font-weight: 750;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .line {
+  width: 1000px;
+  height: 5px;
+  background-color: black;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .dates .link1 {
+  font-size: 25px;
+  color: #4DA6F8;
+  font-weight: 600;
+}
+.App .message_section .message_wrapper .message_content .white_board .header_part .dates .vborder {
+  height: 20px;
+  width: 2px;
+  background-color: black;
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.App .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 300px;
+  background-color: #DEF0F1;
+  border: 1px solid black;
+}
+.App .sidebar .task_control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+.App .sidebar .task_control .collapse, .App .sidebar .task_control .create_task {
+  margin-top: 5px;
+  padding: 5px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+.App .sidebar .task_control .search {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+}
+.App .sidebar .task_control .search .search_part {
+  padding: 5px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 3px solid black;
+  background-color: #E3E6E7;
+}
+.App .sidebar .task_control .search .search_part .search_engine {
+  width: 200px;
+  border: none;
+  height: 25px;
+  background-color: #E3E6E7;
+}
+.App .sidebar .task_control .search .remove {
+  display: block;
+}
+.App .sidebar .message_collection {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.App .sidebar .message_collection .message {
+  margin-top: 15px;
+  padding: 5px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+.App .sidebar .message_collection .message .message_times {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: grey;
+}
+.App .sidebar .message_collection .message .message_name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.App .sidebar .message_collection .message .message_name .name {
+  font-size: 25px;
+  font-weight: bold;
+}
+.App .sidebar .message_collection .message .message_description {
+  font-size: 13px;
+  color: grey;
+}
+
+.App .message_section {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.App .message_section .navbar {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.App .message_section .navbar .message_details {
+  display: flex;
+  justify-content: space-around;
+}
+.App .message_section .navbar .message_details .detail1, .App .message_section .navbar .message_details .detail2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.App .message_section .navbar .message_details .detail1 .description, .App .message_section .navbar .message_details .detail2 .description {
+  font-size: 23px;
+  font-weight: 600;
+}
+.App .message_section .navbar .message_details .detail1 .order_number, .App .message_section .navbar .message_details .detail1 .task_name, .App .message_section .navbar .message_details .detail2 .order_number, .App .message_section .navbar .message_details .detail2 .task_name {
+  font-size: 25px;
+  font-weight: 700;
+}
+.App .message_section .navbar .message_details .detail1 .more_details, .App .message_section .navbar .message_details .detail2 .more_details {
+  display: flex;
+  width: 170px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+}
+.App .message_section .navbar .message_details .detail1 .more_details .table1, .App .message_section .navbar .message_details .detail1 .more_details .table2, .App .message_section .navbar .message_details .detail2 .more_details .table1, .App .message_section .navbar .message_details .detail2 .more_details .table2 {
+  padding: 0;
+  margin: 10px 0;
+  list-style-type: none;
+}
+.App .message_section .navbar .message_details .detail2 {
+  margin-left: 10px;
+  padding-top: 10px;
+  align-items: center;
+}
+.App .message_section .navbar .message_settings {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 130px;
+  align-items: initial;
+}
+.App .message_section .navbar .message_settings .upper_settings {
+  height: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.App .message_section .navbar .message_settings .upper_settings a {
+  margin-top: 30px;
+  text-align: end;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.App .message_section .navbar .message_settings .upper_settings .admin_panel {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 360px;
+  justify-content: space-between;
+}
+.App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 260px;
+}
+.App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details .table1, .App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details .table2 {
+  list-style-type: none;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details .table1 .detail, .App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details .table2 .detail {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details .table1 .detail .icon, .App .message_section .navbar .message_settings .upper_settings .admin_panel .admin_details .table2 .detail .icon {
+  padding: 5px;
+}
+.App .message_section .navbar .message_settings .bottom_settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.App .message_section .navbar .message_settings .bottom_settings .buttons {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+.App .message_section .navbar .message_settings .bottom_settings .buttons .icon {
+  padding-left: 5px;
+}
+
+.App .text_section {
+  height: 170px;
+  width: 100%;
+  border: 5px solid black;
+  background-color: white;
+}
+.App .text_section .text_mini_nav {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+.App .text_section .text_mini_nav .text_settings {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+}
+.App .text_section .text_mini_nav .text_settings .btn {
+  width: 40px;
+  height: 40px;
+  background-color: #E3E6E7;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.App .text_section .text_mini_nav .text_settings .bold {
+  font-weight: bold;
+}
+.App .text_section .text_mini_nav .text_settings .italic {
+  font-style: italic;
+}
+.App .text_section .text_mini_nav .text_settings .underlined {
+  text-decoration: underline;
+}
+.App .text_section .text_mini_nav .text_settings .deleted {
+  text-decoration: line-through;
+}
+.App .text_section .text_mini_nav .text_settings .selector {
+  font-size: 20px;
+  font-weight: 500;
+}
+.App .text_section .text_mini_nav .comments {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.App .text_section .text_mini_nav .comments .comment {
+  background-color: #4DA6F8;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
+.App .text_section .text_board {
+  height: 120px;
+}
+.App .text_section .text_board .text {
+  height: 100px;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

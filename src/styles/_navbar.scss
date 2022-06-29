@@ -1,0 +1,135 @@
+@use 'resource';
+
+.App{
+   
+    .message_section{
+        width:75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   
+        .navbar{
+            height:130px;
+            display: flex;
+            justify-content: space-between;
+            .message_details{
+                display: flex;
+                justify-content: space-around;
+                
+            .detail1, .detail2{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .description{
+                    font-size: 23px;
+                    font-weight: 600;
+                }
+
+                .order_number,.task_name{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+    
+                .more_details{
+                    display: flex;
+                    width:170px;
+                    justify-content: space-between ;
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    .table1, .table2 {
+                        padding:0;
+                        margin:10px 0;
+                        list-style-type: none;
+                    }
+                }
+                
+            }
+
+            .detail2{
+                margin-left:10px;
+                padding-top: 10px;
+                align-items: center;
+            }
+        }
+            .message_settings{
+                width:50%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                height:130px;
+                align-items:initial;
+                .upper_settings{
+                        a {
+                            margin-top: 30px;
+                            text-align:end;
+                            font-size: 17px;
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+
+                    height: 70px;
+                    display: flex;
+                    width:100%;
+                    justify-content: space-between;
+                    .admin_panel{
+                        display: flex;
+                        align-items: center;
+                        height: auto;
+                        width:360px;
+                        justify-content: space-between;
+                        .admin_details{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            height: auto;
+                            width:260px;
+
+                            .table1, .table2{
+                                list-style-type: none;
+                                align-items: center;
+                                padding-top:5px;
+                                padding-left:5px;
+                                padding-bottom:5px;
+                                margin-top:5px;
+                                margin-left:5px;
+                                margin-bottom:5px;
+                                font-size: 17px;
+                                font-weight: 700;
+                                .detail{
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+
+                                    .icon{
+                                        padding:5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom_settings{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .buttons{
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding:5px;
+                        border: 3px solid black;
+                        border-radius: 15px;
+
+                        .icon{
+                            padding-left:5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

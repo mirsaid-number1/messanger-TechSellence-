@@ -1,0 +1,128 @@
+@use 'resource';
+
+
+.App{
+
+    .message_section{
+        height:auto;
+        .message_wrapper{
+            width:100%;
+            background-color: grey;
+            height: 390px;
+            .message_nav{
+                padding-left:10px;
+                width:90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: grey;
+
+                .unit1{
+                    display: flex;
+                    justify-content: space-around;
+                    width:150px;
+                    align-items: center;
+
+                    .icon{
+                        cursor: pointer;
+                    }
+                }
+                .unit2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width:500px;
+                    color:white;
+
+                    .icon{
+                        cursor: pointer;
+                    }
+
+                    .part{
+                        height:20px;
+                        width:3px;
+                        background-color: rgb(72, 70, 70);
+                    }
+                        .zoom{
+                            background-color: grey;
+                            color:white;
+                        }
+                    
+                    
+                }
+            }
+            .message_content{
+                display: flex;
+                width:100%;
+                
+                
+                .white_board{
+                    display: flex;
+                    flex-direction: column;
+                    height: 360px;
+                    width:100%;
+                    background-color: white;
+                    overflow-y: scroll;
+
+                    
+
+                    .header_part{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 50px 0 0 100px;
+                        height: 200px;
+                        
+
+                        .director{
+                            font-size: 23px;
+                            font-weight: 400;
+                        }
+                        .desc{
+                            font-size:15px;
+                            font-weight: 800;
+                        }
+                        .title{
+                            font-size: 25px;
+                        }
+                        .expanded_title{
+                            font-size:35px;
+                            font-weight: 750;
+                        }
+                        
+
+                        .line{
+                            width:1000px;
+                            height:5px;
+                            background-color: black;
+                        }
+
+                        .dates{
+                            
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            width:350px;
+
+                            .link1{
+                                font-size: 25px;
+                                color:resource.$blue-color;
+                                font-weight: 600;
+                            }
+    
+                            .vborder{
+                                height:20px;
+                                width:2px;
+                                background-color: black;
+                            }
+                        }
+
+                    }
+                    
+                    
+                }
+            }
+        }
+        
+    }
+}
